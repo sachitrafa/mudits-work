@@ -27,6 +27,12 @@ def history():
 @app.route("/Team")
 def team():
 	return render_template('about3.html')
+@app.route("/Mission")
+def mission():
+	return render_template("beliefs1.html")
+@app.route("/methodology")
+def methodology():
+	return render_template("beliefs3.html")
 
 if __name__ == '__main__':
 	app.run(debug=True)
