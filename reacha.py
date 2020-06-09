@@ -21,6 +21,12 @@ def login():
 @app.route("/vision")
 def vision():
 	return render_template('beliefs.html')
+@app.route("/History")
+def history():
+	return render_template("about1.html")
+@app.route("/Team")
+def team():
+	return render_template('about3.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
