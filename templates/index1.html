@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Faithful &mdash; Colorlib Website Template</title>
+    <title>REACHA</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Work+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="/static/fonts/icomoon/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet"> 
-
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/css/magnific-popup.css">
     <link rel="stylesheet" href="/static/css/jquery-ui.css">
@@ -16,25 +16,200 @@
     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="/static/css/animate.css">
-    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
-    
-    
-    
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+
     <link rel="stylesheet" href="/static/fonts/flaticon/font/flaticon.css">
-  
+
     <link rel="stylesheet" href="/static/css/aos.css">
 
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style4.css">
     <style>
-      @media (min-width: 576px) {
-        .modal-dialog {
-          max-width: 700px;
+      #grid {
+    position: relative;
+    }
+      .full {
+    width: 100%;
+    float: left;
+    }
+      #grid:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid black;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 0;
+    z-index: 1;
+    }
+      #grid1 {
+    position: relative;
+    }
+
+      #grid1:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #3c6382;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 0;
+    z-index: 1;
+    }
+      #grid .button {
+    margin: 40px auto 0 auto;
+    }
+      .button.green {
+    background: #72dbb0;
+    border-color: #72dbb0;
+    }
+      a:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
+      @media only screen and (min-width: 768px) {
+        .button {
+          font-size: 0.9em;
+        }
+      }
+      .button {
+        display: table;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 200px;
+        line-height: normal;
+        font-weight: 700;
+        border: 3px solid #50d7e6;
+        transition: all, 0.3s;
+      }
+      .button:hover{
+        background-color: white;
+      }
+      .os-animation.animated {
+        opacity: 1;
+      }
+      .cf{
+        zoom: 1;
+      }
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+ .carousel-content-modal {
+  position: absolute;
+  bottom: 8%;
+  left: 72%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content1 {
+  position: absolute;
+  bottom: 65%;
+  left: 2%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-modal1 {
+  position: absolute;
+  bottom: 62%;
+  left: 14%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.carousel-content2 {
+  position: absolute;
+  bottom: 72%;
+  left: 20%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-modal2 {
+  position: absolute;
+  bottom: 70%;
+  left: 45%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content3 {
+  position: absolute;
+  bottom: 15%;
+  left: 60%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-modal3 {
+  position: absolute;
+  bottom: 13%;
+  left: 74%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content5 {
+  position: absolute;
+  bottom: 20%;
+  left: 25%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-modal5 {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content6 {
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-modal6 {
+  position: absolute;
+  bottom:18%;
+  left: 62%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+ @media (min-width: 576px) {
+      .modal-dialog {
+          max-width: 1200px;
           margin: 1.75rem auto;
         }
       }
-      .modal-content {
+    .modal-content {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,130 +226,15 @@
     border-radius: 0.3rem;
     outline: 0;
   }
-  .carousel-content {
-  position: absolute;
-  bottom: 50%;
-  left: 10%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
- .carousel-content-modal {
-  position: absolute;
-  bottom: 48%;
-  left: 20%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content1 {
-  position: absolute;
-  bottom: 65%;
-  left: 2%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal1 {
-  position: absolute;
-  bottom: 62%;
-  left: 10%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-/*.carousel-content2 {*/
-/*  position: absolute;*/
-/*  bottom: 33%;*/
-/*  left: 2%;*/
-/*  z-index: 20;*/
-/*  color: white;*/
-/*  text-shadow: 0 1px 2px rgba(0,0,0,.6);*/
-/*}*/
-.carousel-content2 {
-  position: absolute;
-  bottom: 30%;
-  left: 10%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal2 {
-  position: absolute;
-  bottom: 27%;
-  left: 20%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content3 {
-  position: absolute;
-  bottom: 70%;
-  left: 25%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal3 {
-  position: absolute;
-  bottom: 67%;
-  left: 25%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content4 {
-  position: absolute;
-  bottom: 20%;
-  left: 70%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal4 {
-  position: absolute;
-  bottom: 17%;
-  left: 70%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content5 {
-  position: absolute;
-  bottom: 25%;
-  left: 65%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal5 {
-  position: absolute;
-  bottom: 22%;
-  left: 65%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content6 {
-  position: absolute;
-  bottom: 65%;
-  left: 65%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
-.carousel-content-modal6 {
-  position: absolute;
-  bottom: 62%;
-  left: 65%;
-  z-index: 20;
-  color: white;
-  text-shadow: 0 1px 2px rgba(0,0,0,.6);
-}
+
+
 </style>
-    
+
   </head>
   <body>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0" nonce="H8b8hcIs"></script>
+
   <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -185,10 +245,10 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div> <!-- .site-mobile-menu -->
-    
-    
+
+
     <div class="site-navbar-wrap js-site-navbar bg-white">
-      
+
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
@@ -197,7 +257,7 @@
                 <h2 class="mb-0 site-logo"><a href="index.html">Faithful</a></h2>
               </div>
               <div class="col-10">
-                 <nav class="site-navigation text-right" role="navigation">
+                <nav class="site-navigation text-right" role="navigation">
                   <div class="container">
                     <!-- d-lg-none -->
                     <div class="d-inline-block  ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu h3"></span></a></div>
@@ -387,67 +447,91 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
     </div>
   </div>
 </div>
-  
-    
+
+
     <div class="slide-one-item home-slider owl-carousel">
-      
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner1.0.png');" data-aos="fade" data-stellar-background-ratio="0.5">
+
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
            <div class="carousel-content1">
           <p style="font-family: 'Nunito';font-size: 65px;">INQUISITIVENESS</p>
           </div>
           <div class="carousel-content-modal1">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" class="h3-responsive">Read More</button>
         </div>
-        </div> 
-
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner2.0.jpg');" data-aos="fade"data-stellar-background-ratio="0.5">
-        <div class="carousel-content2">
-          <p style="font-family: 'Nunito';font-size: 80px;">ASPIRATIONAL</p>
         </div>
-         <div class="carousel-content-modal2">
+
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner2.JPG);" data-aos="fade"data-stellar-background-ratio="0.5">
+        <div class="carousel-content">
+          <p style="font-family: 'Nunito';font-size: 65px;">ASPIRATIONAL</p>
+        </div>
+         <div class="carousel-content-modal">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2" class="h3-responsive">Read More</button>
         </div>
       </div>
 
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner3.0.png');" data-aos="fade"data-stellar-background-ratio="0.5">
-         <div class="carousel-content3">
-          <p style="font-family: 'Nunito';font-size: 80px;">INSPIRING TO TRANSFORM</p>
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner3.JPG);" data-aos="fade"data-stellar-background-ratio="0.5">
+         <div class="carousel-content2">
+          <p style="font-family: 'Nunito';font-size: 65px;">INSPIRING TO TRANSFORM</p>
         </div>
-        <div class="carousel-content-modal3">
+        <div class="carousel-content-modal2">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter3" class="h3-responsive">Read More</button>
         </div>
       </div>
 
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner4.0.png');" data-aos="fade"data-stellar-background-ratio="0.5">
-        <div class="carousel-content4">
-          <p style="font-family: 'Nunito';font-size: 80px;">CODE FOR GOOD ... TO CREATE</p>
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner4.JPG);" data-aos="fade"data-stellar-background-ratio="0.5">
+        <div class="carousel-content3">
+          <p style="font-family: 'Nunito';font-size: 65px;">CODE FOR GOOD</p>
         </div>
-        <div class="carousel-content-modal4">
+        <div class="carousel-content-modal3">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter4" class="h3-responsive">Read More</button>
         </div>
-      </div> 
+      </div>
 
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner5.0.png');" data-aos="fade"data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner5.jpg);" data-aos="fade"data-stellar-background-ratio="0.5">
         <div class="carousel-content5">
-          <p style="font-family: 'Nunito';font-size: 80px;">LEARNING WITH UNDERSTANDING</p>
+          <p style="font-family: 'Nunito';font-size: 65px;">LEARNING WITH UNDERSTANDING</p>
         </div>
         <div class="carousel-content-modal5">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter5" class="h3-responsive">Read More</button>
         </div>
-      </div>  
+      </div>
 
-      <div class="site-blocks-cover overlay" style="background-image: url('/static/images/banner6.0.png');" data-aos="fade"data-stellar-background-ratio="0.5">
+      <div class="site-blocks-cover overlay" style="background-image: url(/static/images/banner6.JPG);" data-aos="fade"data-stellar-background-ratio="0.5">
         <div class="carousel-content6">
-          <p style="font-family: 'Nunito';font-size: 80px;">BREAKING NEW GROUND</p>
+          <p style="font-family: 'Nunito';font-size: 65px;">BREAKING NEW GROUND</p>
         </div>
         <div class="carousel-content-modal6">
           <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter6" class="h3-responsive" onclick="myFunction()">Read More</button>
         </div>
-      
-      </div>  
+
+      </div>
 
 
     </div>
+    <style>
+     #grid .button:hover{
+        color: #72dbb0;
+      }
+    </style>
+      <section id="grid" class="full">
+      <div class="site-section" style="background: linear-gradient(to bottom,white 75%,lightskyblue)">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+              <h2 class="mb-5" style="font-size: 60px;" data-aos="fade-down" >What <span style="color: #030968;">We Do</span></h2>
+            </div>
+          </div>
+          <div class="row">
+           <div class="container">
+             <div class="box">
+               <p style="font-size: 20px" data-aos="fade-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+               <a class="button green" href="/">Learn More</a> </p>
+          </div>
+        </div>
+      </div>
+        </div>
+      </div>
+    </section>
 
     <!--<div class="py-5 bg-primary upcoming-events">
       <div class="container">
@@ -458,96 +542,55 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
           </div>
           <div class="col-md-6">
             <span class="caption">The camp meeting will start in</span>
-            <div id="date-countdown"></div>    
+            <div id="date-countdown"></div>
           </div>
         </div>
-        
+
       </div>
     </div> -->
-    <style>
-      #grid {
-    position: relative;
-    }
-      .full {
-    width: 100%;
-    float: left;
-    }
-      #grid:before {
-    content: '';
-    display: block;
-    width: 0;
-    height: 0;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid black;
-    position: absolute;
-    left: 50%;
-    margin-left: -20px;
-    top: 0;
-    z-index: 1;
-    }
-      #grid .button {
-    margin: 40px auto 0 auto;
-    }
-      .button.green {
-    background: #72dbb0;
-    border-color: #72dbb0;
-    }
-      a:link {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
-    }
-      @media only screen and (min-width: 768px) {
-        .button {
-          font-size: 0.9em;
-        }
-      }
-      .button {
-        display: table;
-        color: #fff;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        border-radius: 200px;
-        line-height: normal;
-        font-weight: 700;
-        border: 3px solid #50d7e6;
-        transition: all, 0.3s;
-      }
-      .button:hover{
-        background-color: white;
-      }
-      .os-animation.animated {
-        opacity: 1;
-      }
-      .cf{
-        zoom: 1;
-      }
-    </style>
-    <section id="grid" class="full">
-      <div class="site-section" style="background: linear-gradient(to bottom,white 75%,lightskyblue)">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-              <h2 class="mb-5" style="font-size: 80px;" data-aos="fade-down" >What <span style="color: #030968;">We Do</span></h2>
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+            <h2 class="mb-5">Church Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="church-service text-center">
+              <a href="#" class="d-block mb-3 thumbnail"><img src="/static/images/img_1.jpg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-3"><a href="#">Consectetur adipisicing elit</a></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore recusandae soluta quis.</p>
+              <p><a href="#" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
             </div>
           </div>
-          <div class="row">
-           <div class="container">
-             <div class="box">
-               <p style="font-size: 29px" data-aos="fade-down">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-               <a class="button green" href="/">Learn More</a> </p>
+          <div class="col-md-4">
+            <div class="church-service text-center">
+              <a href="#" class="d-block mb-3 thumbnail"><img src="/static/images/img_2.jpg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-3"><a href="#">Consectetur adipisicing elit</a></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore recusandae soluta quis.</p>
+              <p><a href="#" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="church-service text-center">
+              <a href="#" class="d-block mb-3 thumbnail"><img src="/static/images/img_3.jpg" alt="Image" class="img-fluid"></a>
+              <h3 class="heading mb-3"><a href="#">Consectetur adipisicing elit</a></h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta labore recusandae soluta quis.</p>
+              <p><a href="#" class="text-primary">Read More <span class="icon-arrow-right small"></span></a></p>
+            </div>
           </div>
         </div>
       </div>
-        </div>
-      </div>
-    </section>
+    </div>
 
 
     <div class="site-section bg-light">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6 mb-5 mb-md-0">
-            
+
               <div class="img-border">
                 <a href="https://vimeo.com/28959265" class="popup-vimeo image-play">
                   <span class="icon-wrap">
@@ -556,12 +599,12 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
                   <img src="images/img_2.jpg" alt="" class="img-fluid">
                 </a>
               </div>
-            
+
           </div>
           <div class="col-md-5 ml-auto">
             <span class="caption px-0 text-muted">Latest Sermon</span>
             <h2 class="h2 mb-0">God is Love</h2>
-            <span class="d-block mb-3"><em>by</em> Ptr. Johnson</span>  
+            <span class="d-block mb-3"><em>by</em> Ptr. Johnson</span>
             <p class="h5 mb-2">If ye love Me, keep My Commandments.</p>
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nobis magni eaque velit eum, id rem eveniet dolor possimus voluptas..</p>
             <p><a href="https://vimeo.com/28959265" class="popup-vimeo text-uppercase">Watch Video <span class="icon-arrow-right small"></span></a></p>
@@ -569,7 +612,54 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
         </div>
       </div>
     </div>
+<div class="middle" style="padding-top: 20px;padding-bottom: 40px; background: linear-gradient(90deg,#3c6382,#82ccdd);">
+  <div class="row">
+      <br/>
+     <div class="col text-center">
+    <h2>OUR REACH</h2>
+    </div>
 
+
+
+  </div>
+    <div class="row text-center">
+          <div class="col">
+          <div class="counter">
+      <i class="fas fa-chalkboard-teacher fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+       <p class="count-text" style="color:black">Trainers & Teachers</p>
+    </div>
+          </div>
+              <div class="col">
+               <div class="counter">
+      <i class="fas fa-child fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <p class="count-text" style="color:black;">Children</p>
+    </div>
+              </div>
+              <div class="col">
+                  <div class="counter">
+      <i class="fa-2x fas fa-home"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <p class="count-text" style="color:black;">Families</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+      <i class="fas fa-user-friends fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <p class="count-text" style='color: black;'>Youth involved</p>
+    </div>
+              </div>
+                 <div class="col">
+              <div class="counter">
+      <i class="fas fa-briefcase fa-2x"></i>
+      <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <p class="count-text " style="color: black;">Parteners</p>
+    </div>
+              </div>
+         </div>
+</div>
+  <!--
     <div class="site-section">
       <div class="container">
         <div class="row">
@@ -608,7 +698,38 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
         </div>
       </div>
     </div>
-    
+  -->
+    <div id="grid1" class="full">
+    <div class="site-section" style="background: #dfe2d4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
+            <h2 class="mb-5" style="text-align: center; font-size: 50px" data-aos="fade-down">Latest Updates</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="flex-container" data-aos="fade-down">
+            <div class="fb-page" data-href="https://www.facebook.com/reacha.org/"
+            data-tabs="timeline"
+            data-width="500px"
+            data-height="400px"
+            data-small-header="true"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"></div>
+            <div class="fb-page" style="padding-left: 60px;width: 500px;"data-href="https://www.facebook.com/reacha.org/"
+            data-tabs="events"
+            data-width="500px"
+            data-height="500px"
+            data-small-header="true"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="true"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
     <div class="site-section block-15">
@@ -621,7 +742,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
 
 
         <div class="nonloop-block-15 owl-carousel">
-          
+
 
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
@@ -633,7 +754,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -644,7 +765,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -666,7 +787,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -677,7 +798,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -688,7 +809,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-            
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -699,7 +820,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -710,7 +831,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
+
             <div class="media-with-text">
               <div class="img-border-sm mb-4">
                 <a href="#" class="popup-vimeo image-play">
@@ -721,40 +842,13 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
               <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
             </div>
-          
 
 
-        </div>
 
-        <div class="row">
-          
         </div>
       </div>
     </div>
-    <div class="site-section block-15">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 mx-auto text-center mb-5 section-heading">
-            <h2>What do we do</h2>
-          </div>
-        </div>
 
-
-        <div class="nonloop-block-15 owl-carousel">
-
-
-            <div class="media-with-text">
-              <div class="img-border-sm mb-4">
-                <a href="#" class="popup-vimeo image-play">
-                  <img src="/static/images/img_1.jpg" alt="" class="img-fluid">
-                </a>
-              </div>
-              <h2 class="heading mb-0"><a href="#">Lorem Ipsum Dolor Sit Amet</a></h2>
-              <span class="mb-3 d-block post-date">Dec 20th, 2018 &bullet; By <a href="#">Admin</a></span>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolores culpa qui aliquam placeat nobis veritatis tempora natus rerum obcaecati.</p>
-            </div>
-        </div>
-    
 
     <div class="py-5 quick-contact-info">
       <div class="container">
@@ -763,34 +857,33 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
             <div>
               <span class="icon-room text-white h2 d-block"></span>
               <h2>Location</h2>
-              <p class="mb-0">New York - 2398 <br>  10 Hadson Carl Street</p>
+              <p class="mb-0">177-178, 2nd Floor,Triveni Apartments<br> Jhilmil Colony,Delhi 110095</p>
             </div>
           </div>
           <div class="col-md-4 text-center">
             <div>
-              <span class="icon-clock-o text-white h2 d-block"></span>
-              <h2>Service Times</h2>
-              <p class="mb-0">Wednesdays at 6:30PM - 7:30PM <br>
-              Fridays at Sunset - 7:30PM <br>
-              Saturdays at 8:00AM - Sunset</p>
+              <span class=""></span>
+              <h2></h2>
+              <p class="mb-0"> <br>
+               <br>
+             </p>
             </div>
           </div>
           <div class="col-md-4 text-center">
             <div>
               <span class="icon-comments text-white h2 d-block"></span>
               <h2>Get In Touch</h2>
-              <p class="mb-0">Email: info@yoursite.com <br>
-              Phone: (123) 3240-345-9348 </p>
+              <p class="mb-0">Email: nikhil@reacha.org <br>
+              Phone:  011-22149730 </p>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    
     <footer class="site-footer" style="background-image: url('images/hero_1.jpg');">
       <div class="container">
-        
+
 
         <div class="row">
           <div class="col-md-4">
@@ -824,7 +917,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
             </div>
           </div>
 
-          
+
           <div class="col-md-2">
             <div class="col-md-12"><h3 class="footer-heading mb-4 text-white">Social Icons</h3></div>
               <div class="col-md-12">
@@ -846,7 +939,7 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
-          
+
         </div>
       </div>
     </footer>
@@ -864,31 +957,144 @@ Thus, we seek to inspire our teachers to transform the learner into changemakers
   <script src="/static/js/bootstrap-datepicker.min.js"></script>
   <script src="/static/js/aos.js"></script>
 
-  
+
   <script src="/static/js/mediaelement-and-player.min.js"></script>
 
   <script src="/static/js/main.js"></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 
   <script>
-      document.addEventListener('DOMContentLoaded', function() {
-                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
 
-                for (var i = 0; i < total; i++) {
-                    new MediaElementPlayer(mediaElements[i], {
-                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-                        shimScriptAccess: 'always',
-                        success: function () {
-                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-                            for (var j = 0; j < targetTotal; j++) {
-                                target[j].style.visibility = 'visible';
-                            }
-                  }
-                });
-                }
-            });
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
 
-    </script>
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+<script type="text/javascript">
+    $(".num").counterUp({delay:10,time:1000});
+  </script>
   </body>
 </html>
+×
+Drag and Drop
+The image will be downloaded
