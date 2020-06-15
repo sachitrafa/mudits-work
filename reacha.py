@@ -6,7 +6,7 @@ app.config['SECRET_KEY']='vasu'
 
 @app.route("/")
 def hello():
-	return render_template('index1.html')
+	return render_template('index.html')
 @app.route("/about")
 def about():
 	return render_template('about.html')
