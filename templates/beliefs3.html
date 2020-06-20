@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="/static/css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     
@@ -29,6 +30,61 @@
     
   </head>
   <body>
+  <style>
+      #grid {
+    position: relative;
+    }
+      .full {
+    width: 100%;
+    float: left;
+    }
+      #grid:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #333030;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 0;
+    z-index: 1;
+    }
+  #grid .button {
+    margin: 40px auto 0 auto;
+    }
+      .button.green {
+    background: #72dbb0;
+    border-color: #72dbb0;
+    }
+      a:link {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+    }
+      @media only screen and (min-width: 768px) {
+        .button {
+          font-size: 0.9em;
+        }
+      }
+      .button {
+        display: table;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        border-radius: 200px;
+        line-height: normal;
+        font-weight: 700;
+        border: 3px solid #50d7e6;
+        transition: all, 0.3s;
+      }
+      .button:hover{
+        background-color: white;
+      }
+      .button:hover{
+        color: #72dbb0;
+      }
+  </style>
   
   <div class="site-wrap">
 
@@ -153,6 +209,67 @@
           </div>
         </div>
       </div>
+      <div id="grid" style="background-image: url('/static/images/banner11.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-attachment: fixed">
+    <div class="middle" style="padding-top: 20px;padding-bottom: 40px;">
+      <div class="row">
+          <br/>
+         <div class="col text-center">
+        <h1 style="color: white">Our <span style="color: lightyellow"> Reach !</span> </h1>
+        </div>
+      </div>
+        <div class="row text-center">
+              <div class="col">
+              <div class="counter">
+          <i class="fas fa-chalkboard-teacher fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+           <p class="count-text" style="color:black">Trainers & Teachers</p>
+        </div>
+              </div>
+                  <div class="col">
+                   <div class="counter">
+          <i class="fas fa-child fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+          <p class="count-text" style="color:black;">Children</p>
+        </div>
+                  </div>
+                  <div class="col">
+                      <div class="counter">
+          <i class="fa-2x fas fa-home"></i>
+          <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+          <p class="count-text" style="color:black;">Families</p>
+        </div></div>
+                  <div class="col">
+                  <div class="counter">
+          <i class="fas fa-user-friends fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+          <p class="count-text" style='color: black;'>Youth involved</p>
+        </div>
+                  </div>
+                     <div class="col">
+                  <div class="counter">
+          <i class="fas fa-briefcase fa-2x"></i>
+          <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+          <p class="count-text " style="color: black;">Parteners</p>
+        </div>
+                  </div>
+             </div>
+         <div class="row" style="margin-top: 5%">
+            <div id="header-image">
+              <div class="row">
+
+                <div class="col">
+                  <!--<h2 style="color:white;font-size: 50px;">About Us</h2> -->
+                  <a class="button green" style="margin-left: 46%;margin-top: 10%;" href="#">DONATE NOW</a>
+                </div>
+
+              </div>
+            </div>
+
+
+            </div>
+          <!-- end header image -->
+        </div>
+      </div>
 
     
 
@@ -257,6 +374,137 @@
                 }
             });
     </script>
+   <script>
+  (function ($) {
+  $.fn.countTo = function (options,viewCounter) {
+  if(viewCounter == 1){
+    options = options || {};
+
+    return $(this).each(function () {
+      // set options for current element
+      var settings = $.extend({}, $.fn.countTo.defaults, {
+        from:            $(this).data('from'),
+        to:              $(this).data('to'),
+        speed:           $(this).data('speed'),
+        refreshInterval: $(this).data('refresh-interval'),
+        decimals:        $(this).data('decimals')
+      }, options);
+
+      // how many times to update the value, and how much to increment the value on each update
+      var loops = Math.ceil(settings.speed / settings.refreshInterval),
+        increment = (settings.to - settings.from) / loops;
+
+      // references & variables that will change with each update
+      var self = this,
+        $self = $(this),
+        loopCount = 0,
+        value = settings.from,
+        data = $self.data('countTo') || {};
+
+      $self.data('countTo', data);
+
+      // if an existing interval can be found, clear it first
+      if (data.interval) {
+        clearInterval(data.interval);
+      }
+      data.interval = setInterval(updateTimer, settings.refreshInterval);
+
+      // initialize the element with the starting value
+      render(value);
+
+      function updateTimer() {
+        value += increment;
+        loopCount++;
+
+        render(value);
+
+        if (typeof(settings.onUpdate) == 'function') {
+          settings.onUpdate.call(self, value);
+        }
+
+        if (loopCount >= loops) {
+          // remove the interval
+          $self.removeData('countTo');
+          clearInterval(data.interval);
+          value = settings.to;
+
+          if (typeof(settings.onComplete) == 'function') {
+            settings.onComplete.call(self, value);
+          }
+        }
+      }
+
+      function render(value) {
+        var formattedValue = settings.formatter.call(self, value, settings);
+        $self.html(formattedValue);
+      }
+    });
+  };
+  }
+
+  $.fn.countTo.defaults = {
+    from: 0,               // the number the element should start at
+    to: 0,                 // the number the element should end at
+    speed: 1000,           // how long it should take to count between the target numbers
+    refreshInterval: 100,  // how often the element should be updated
+    decimals: 0,           // the number of decimal places to show
+    formatter: formatter,  // handler for formatting the value before rendering
+    onUpdate: null,        // callback method for every time the element is updated
+    onComplete: null       // callback method for when the element finishes updating
+  };
+
+  function formatter(value, settings) {
+    return value.toFixed(settings.decimals);
+  }
+}(jQuery));
+
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+  formatter: function (value, options) {
+    return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+
+  // start all the timers
+  var viewCounter = 0;
+  $(document).on( 'scroll', function(){
+    if($('.timer').each(count).isOnScreen() && viewCounter < 2){
+      viewCounter++;
+      console.log(viewCounter);
+    }
+  });
+
+function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options,viewCounter);
+}
+});
+
+
+// check if element visible in viewport
+$.fn.isOnScreen = function(){
+    var win = $(window);
+    var viewport = {
+        top : win.scrollTop(),
+        left : win.scrollLeft()
+    };
+    viewport.right = viewport.left + win.width();
+    viewport.bottom = viewport.top + win.height();
+
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+
+    return (!(viewport.right < bounds.left || viewport.left > bounds.right || viewport.bottom < bounds.top || viewport.top > bounds.bottom));
+
+};
+</script>
+<script type="text/javascript">
+    $(".num").counterUp({delay:10,time:1000});
+  </script>
+
 
   </body>
 </html>
