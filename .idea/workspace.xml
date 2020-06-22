@@ -4,13 +4,7 @@
     <list default="true" id="373bbf24-29ff-4d11-94f1-0b9373e4aa79" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/beliefs.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/beliefs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/beliefs1.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/beliefs1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/beliefs3.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/beliefs3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/volunteer.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/volunteer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,6 +134,12 @@
       <workItem from="1592544913416" duration="6543000" />
       <workItem from="1592561696716" duration="2583000" />
       <workItem from="1592577698909" duration="634000" />
+      <workItem from="1592659154481" duration="2262000" />
+      <workItem from="1592715375057" duration="6825000" />
+      <workItem from="1592731598140" duration="6666000" />
+      <workItem from="1592746703414" duration="10664000" />
+      <workItem from="1592759675771" duration="1106000" />
+      <workItem from="1592801241524" duration="7458000" />
     </task>
     <servers />
   </component>
@@ -151,32 +151,32 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591548813608" />
-    <state width="1323" height="180" key="GridCell.Tab.0.bottom" timestamp="1592580166015">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1592810943972">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592580166015" />
-    <state width="1323" height="180" key="GridCell.Tab.0.center" timestamp="1592580166015">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592810943972" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1592810943971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592580166015" />
-    <state width="1323" height="180" key="GridCell.Tab.0.left" timestamp="1592580166014">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1592810943971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592580166014" />
-    <state width="1323" height="180" key="GridCell.Tab.0.right" timestamp="1592580166015">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1592810943971">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="180" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592580166015" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1591507836082">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591507836082" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592577699166">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592801761402">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592577699166" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592801761402" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/reacha_website$reacha.coverage" NAME="reacha Coverage Results" MODIFIED="1592577727223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/reacha_website$reacha.coverage" NAME="reacha Coverage Results" MODIFIED="1592810908601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
