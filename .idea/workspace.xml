@@ -52,12 +52,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/docs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sachit\Desktop\reacha-website\static\docs" />
       <recent name="C:\Users\sachit\Desktop\reacha-website\static\images" />
       <recent name="C:\Users\sachit\Desktop\reacha-website\templates" />
     </key>
@@ -140,6 +141,11 @@
       <workItem from="1592746703414" duration="10664000" />
       <workItem from="1592759675771" duration="1106000" />
       <workItem from="1592801241524" duration="7458000" />
+      <workItem from="1592845396519" duration="505000" />
+      <workItem from="1593157794454" duration="2593000" />
+      <workItem from="1593353160105" duration="4907000" />
+      <workItem from="1593364764845" duration="2563000" />
+      <workItem from="1593413573456" duration="2931000" />
     </task>
     <servers />
   </component>
@@ -147,36 +153,36 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591548813608">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1593353556154">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1591548813608" />
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1592810943972">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593353556154" />
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom" timestamp="1593416726650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1592810943972" />
-    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1592810943971">
+    <state width="1323" height="182" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593416726650" />
+    <state width="1323" height="182" key="GridCell.Tab.0.center" timestamp="1593416726650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
-    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1592810943971">
+    <state width="1323" height="182" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593416726650" />
+    <state width="1323" height="182" key="GridCell.Tab.0.left" timestamp="1593416726650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
-    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1592810943971">
+    <state width="1323" height="182" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593416726650" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right" timestamp="1593416726650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1592810943971" />
+    <state width="1323" height="182" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593416726650" />
     <state x="184" y="6" key="SettingsEditor" timestamp="1591507836082">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1591507836082" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1592801761402">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1593413573483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1592801761402" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1593413573483" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/reacha_website$reacha.coverage" NAME="reacha Coverage Results" MODIFIED="1592810908601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/reacha_website$reacha.coverage" NAME="reacha Coverage Results" MODIFIED="1593416744330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
